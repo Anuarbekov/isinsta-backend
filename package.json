@@ -1,0 +1,19 @@
+{
+  "name": "express-apps",
+  "version": "0.0.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "nodemon ./app.js"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "mongodb": "^5.2.0",
+    "nodemon": "^2.0.22"
+  },
+  "devDependencies": {
+    "mongodb-memory-server": "^8.12.2"
+  }
+}
