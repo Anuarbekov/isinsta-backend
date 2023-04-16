@@ -9,12 +9,9 @@ const port = 8080;
 app.use(express.json({ limit: "50mb" }));
 app.use(express.urlencoded({ limit: "50mb" }));
 
-//TODO | get all posts in Images
 app.get("/", async (req, res) => {
   try {
-    const collection = db.collection("images");
-    const results = await collection.find({}).toArray();
-    res.json(results);
+    res.json({ message: "Default page!" });
   } catch (err) {
     res.json(err);
   }
